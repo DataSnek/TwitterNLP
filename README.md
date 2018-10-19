@@ -5,4 +5,4 @@ All of the code used is in this Jupyter Notebook: ![Notebook_TwitterNLP.ipynb](h
 User account analyzed:
 https://twitter.com/AlexWhitcomb
 
-### Please visit me on Twitter! [DataSnek](https://twitter.com/DataSnek)
+## Visit me on Twitter! [DataSnek](https://twitter.com/DataSnek)
