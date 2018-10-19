@@ -19,7 +19,7 @@ Looking at a sample of distributions from a sample of top mentions you can start
 Looking at the data it becomes clear that the theme of every tweet can be very different. The first result is FaceBook and the second is Formula One racing. Trends in thousand of tweets would not be viewable but through topic modeling we can gain valuable insight.
 From the top 100 mentions the corpus was collected and Tweet is decomposed into vectors to represent the words frequency and distribution. The vectorization is not related to the network graph but the information is extracted 
 
-![Sample of Tweets](https://github.com/DataSnek/TwitterNLP/Pics/tweets.png)
+![Sample of Tweets](https://github.com/DataSnek/TwitterNLP/blob/master/Pics/tweets.png)
 
 ## Network Analysis
 
@@ -27,9 +27,11 @@ At this point we have collected the names and frequencies of mentions between ac
 
 ![Useful stars](https://github.com/DataSnek/TwitterNLP/Pics/spring.png)
 
+While this is useful a force directed ego graph is cleaner and more useful. 
+
 
 You can see from the circular graph that there is a huge amount of connectivity in this network. Unfortunately to really appreciate and see a network connectivity graph it requires a very large monitor which I used during this project.  The most influential people are the ones most connected. Note Selina Gomez is on the outer circle while Hilary Clinton is one of the most influential people in this particular network. 
 
 
-
+![Useful stars](https://github.com/DataSnek/TwitterNLP/blob/master/Pics/tweets.png)
 
