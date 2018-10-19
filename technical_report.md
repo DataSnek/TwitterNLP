@@ -43,26 +43,48 @@ In order to be able to see the data a dimensionality reduction is performed usin
 Individual user tweets are being grouped into clusters indicating there are some distinct topics they are Tweeting about. Each user has a unique Tweet "fingerprint" and the right middle graph has a suspiciously uniform distribution of Tweets potentially indicating an automated account.
 This analysis while interesting does not tell us what these topics are in a context of the entire social group. To do his we need to use Latent Dirichlet allocation on the entire body of Tweets. Doing so returns the following topics:
 
-`Topic #0: just think right today america trump going know laurenduca don friends nxthompson gun eagles make really cnn wants people sorry
-Topic #1: wired read like thing story important want woman today news new real right fake did things cover trump know thought
-Topic #2: trump just like man day sure dr san francisco don let hope good going today know new time social tweets
-Topic #3: zuckerberg mark thanks like facebook need news don trump make does twitter lucky know actually wired good feel got president
-Topic #4: ve best time pardesoteric ll know love don life come world snackfight wired happy read things good think facebook let
-Topic #5: people don facebook trump zuckerberg today just live make wired realdonaldtrump problems mark told new guys forget think going man
-Topic #6: yes time people right just think wired year trump did like said today 2017 world don news old president lying
-Topic #7: wired reading people know thanks thank trump twitter president years ve glad words today man don hope kind john best
-Topic #8: wired like just trump didn know don tweet ndiblasio news times people wait pretty welcome vermont proud home work think
-Topic #9: hey did trump na day kavanaugh news right best people facebook isn brett ll fine president thing got want aren`
-
 `Topic #0: just think right today america trump going know laurenduca don friends nxthompson gun eagles make really cnn wants people sorry`
 
-Clearly we can see that there are distict topics. However not all of them are discernable. But not all is lost becasue turning to google gives us a clear understanding of the topic. For topic 0 the results are clearly the author Lauren Duca discussing trump. 
+Clearly we can see that there are distict topics. However not all of them are discernable. But not all is lost becasue turning to google gives us a clear understanding of the topic. For Topic #0 the results are clearly the author Lauren Duca discussing trump. 
 
 ![topic0](https://github.com/DataSnek/TwitterNLP/blob/master/Pics/topic0.png)
 
 `Topic #1: wired read like thing story important want woman today news new real right fake did things cover trump know thought`
 
+Even when the search results do not converge you can see that Topic #1 is simply WIRED magazine.
 
+![topic1](https://github.com/DataSnek/TwitterNLP/blob/master/Pics/topic1.png)
  
+`Topic #2: trump just like man day sure dr san francisco don let hope good going today know new time social tweets`
 
+Topic #2 is more vauge but centered around Trump. 
+
+`Topic #3: zuckerberg mark thanks like facebook need news don trump make does twitter lucky know actually wired good feel got president`
+
+Topic #3 is FaceBook and Mark Zuckerberg.
+
+`Topic #4: ve best time pardesoteric ll know love don life come world snackfight wired happy read things good think facebook let`
+
+Topic #4 is SF author Michael Calore
+
+`Topic #5: people don facebook trump zuckerberg today just live make wired realdonaldtrump problems mark told new guys forget think going man`
+
+Topcic #5 is also FaceBook and Mark Zuckerberg
+
+`Topic #6: yes time people right just think wired year trump did like said today 2017 world don news old president lying`
+ 
+ Topic #6 is politics. You can see that there is some subjectivity to the analysis but overall we are resolving well. The number of topics is decided beforehand. 10 topics gave the optimum resolve when compared to 5,20 and 30. 
+
+`Topic #7: wired reading people know thanks thank trump twitter president years ve glad words today man don hope kind john best`
+
+`Topic #9: hey did trump na day kavanaugh news right best people facebook isn brett ll fine president thing got want aren`
+
+
+## Conclusion
+
+The amount of information that is accessible through unsupervised modeling of topics in text  depends on the type of information you feed into it. When looking at Tweets, some Twitter accounts are much less resolvable than others or require different parameters or models. The endpoints of unsupervised models are not as hard as other ML tasks but a characterized model’s ability to sort many documents quickly far outpaces a human. Some of the distributed topics are actually almost impossible for a person to identify while vector representation and unsupervised clustering can identify connections. 
+
+## Additional Work
+
+In addition to this study an investigation into larger network structures and the distribution of the topics discussed is proposed. Determining a way to spread the search from user to user around a central group could be achieved by setting node parameters for the number of connections and a centrality score. Also building up a Twitter account would allow me to set up some automated interactions using NLP and my profile. I want to have a chatbot that you can request network info from.
 
